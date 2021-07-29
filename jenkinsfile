@@ -4,6 +4,9 @@ pipeline {
         stage('build') {
             steps {
                 echo "Build stage in progress"
+                echo "--- download latest source ---"
+                sh "git init"
+                sh "git clone https://github.com/nelsonchui/idrs_poc.git"
             }
         }
         stage('deploy') {
