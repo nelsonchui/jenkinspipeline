@@ -9,6 +9,7 @@ pipeline {
                 sh "git init"
                 sh "git clone https://github.com/nelsonchui/idrs_poc.git"
                 sh "cd idrs_poc"
+                sh "pwd"
                 sh "ls -al"
             }
         }
